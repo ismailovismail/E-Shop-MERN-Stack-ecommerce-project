@@ -1,0 +1,16 @@
+.register{
+    background-image: url('../images/register-4.jpg');
+   background-position: center;
+    background-size: cover;
+   .container-fluid{
+    width: 90%;
+    .register-part{
+        box-shadow: -1px 7px 21px 3px rgba(0,0,0,0.43);
+        border: 2px solid black;
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+    }
+   }
+}

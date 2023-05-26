@@ -1,0 +1,14 @@
+nav{
+    box-shadow: -1px 7px 21px 3px rgba(0,0,0,0.43);
+    .container-fluid{
+        width: 95%;
+    }
+    .navbar-brand{
+        font-weight: bold;
+    }
+        .active{
+            border-bottom:2px solid black;
+        }
+    
+  
+}

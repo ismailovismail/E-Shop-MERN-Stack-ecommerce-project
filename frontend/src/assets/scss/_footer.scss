@@ -1,0 +1,27 @@
+footer{
+    height: 100%;
+    width: 100%;
+    .page-links{
+        .links{
+            li{
+                display: flex;
+                align-items: center;
+                &:nth-child(1){
+                    border-right: 1px solid white;
+                }
+                &:nth-child(2){
+                    border-right: 1px solid white;
+                }
+                a{
+                    margin-right: 10px;
+                    text-decoration: none;
+                    color: white;
+                    &:hover{
+                        color: violet;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

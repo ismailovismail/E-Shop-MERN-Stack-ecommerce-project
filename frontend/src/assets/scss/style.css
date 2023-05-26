@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+nav {
+  box-shadow: -1px 7px 21px 3px rgba(0, 0, 0, 0.43);
+}
+nav .container-fluid {
+  width: 95%;
+}
+nav .navbar-brand {
+  font-weight: bold;
+}
+nav .active {
+  border-bottom: 2px solid black;
+}
+
+footer {
+  height: 100%;
+  width: 100%;
+}
+footer .page-links .links li {
+  display: flex;
+  align-items: center;
+}
+footer .page-links .links li:nth-child(1) {
+  border-right: 1px solid white;
+}
+footer .page-links .links li:nth-child(2) {
+  border-right: 1px solid white;
+}
+footer .page-links .links li a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+footer .page-links .links li a:hover {
+  color: violet;
+}
+
+.main-home-img {
+  width: 100%;
+  height: 500px;
+}
+
+.filtering-component {
+  background-image: url("../images/register-3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contact .container-fluid {
+  width: 90%;
+}
+.contact .container-fluid .image img {
+  width: 100%;
+}
+
+.about .container-fluid {
+  width: 90%;
+}
+.about .container-fluid .about-part .image img {
+  width: 100%;
+}
+
+.register {
+  background-image: url("../images/register-4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.register .container-fluid {
+  width: 90%;
+}
+.register .container-fluid .register-part {
+  box-shadow: -1px 7px 21px 3px rgba(0, 0, 0, 0.43);
+  border: 2px solid black;
+}
+.register .container-fluid .register-part h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login {
+  background-image: url("../images/register-4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.login .login-part {
+  box-shadow: -1px 7px 21px 3px rgba(0, 0, 0, 0.43);
+}
+
+.forgot {
+  background-image: url("../images/register-4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.forgot .login-part {
+  box-shadow: -1px 7px 21px 3px rgba(0, 0, 0, 0.43);
+}
+
+.dashboard {
+  background-image: url("../images/register-4.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.dashboard .container-fluid {
+  width: 90%;
+}
+.dashboard .container-fluid .admin-details {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -1px 7px 21px 3px rgba(0, 0, 0, 0.43);
+}
+.dashboard .container-fluid .cruds {
+  background-color: white;
+  box-shadow: -1px 7px 21px 3px rgba(0, 0, 0, 0.43);
+  border-radius: 10px;
+}
+
+.edit-user {
+  background-image: url("../images/register-4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.edit-user .register-part {
+  box-shadow: -1px 7px 21px 3px rgba(0, 0, 0, 0.43);
+}
+
+.edit-profile .settings {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.user {
+  background-color: rgb(193, 192, 192);
+  background-image: url("../images/register-4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.user .container-fluid {
+  width: 90%;
+}
+.user .container-fluid .user-info {
+  box-shadow: -1px 7px 21px 3px rgba(0, 0, 0, 0.43);
+}
+
+.edit-profile {
+  background-image: url("../images/register-4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.edit-profile .container-fluid {
+  width: 90%;
+}
+.edit-profile .container-fluid .settings {
+  box-shadow: -1px 7px 21px 3px rgba(0, 0, 0, 0.43);
+}
+.edit-profile .container-fluid .settings a {
+  color: black;
+}
+.edit-profile .container-fluid .settings .active {
+  border-bottom: 1px solid black;
+  color: black;
+}
+.edit-profile .container-fluid .edit-pages {
+  box-shadow: -1px 7px 21px 3px rgba(0, 0, 0, 0.43);
+}
+
+.order-list {
+  box-shadow: -1px 7px 21px 3px rgba(0, 0, 0, 0.43);
+  overflow-x: scroll;
+  height: 300px;
+}
+
+.add-category {
+  background-image: url("../images/register-4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.add-category-form {
+  box-shadow: -1px 7px 21px 3px rgba(0, 0, 0, 0.43);
+}
+
+.edit-category {
+  background-image: url("../images/register-4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.add-product {
+  background-image: url("../images/register-4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.add-product .add-product-form {
+  box-shadow: -1px 7px 21px 3px rgba(0, 0, 0, 0.43);
+}
+.add-product .uploader {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.edit-product {
+  background-image: url("../images/register-4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.cart .container-fluid {
+  width: 90%;
+}
+
+.cart-products {
+  box-shadow: -1px 7px 21px 3px rgba(0, 0, 0, 0.43);
+}
+
+.checkout-payment {
+  box-shadow: -1px 7px 21px 3px rgba(0, 0, 0, 0.43);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body {
+  overflow-x: hidden;
+}/*# sourceMappingURL=style.css.map */

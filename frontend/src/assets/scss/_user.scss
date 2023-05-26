@@ -1,0 +1,41 @@
+.user{
+    background-color: rgb(193, 192, 192);
+    background-image: url('../images/register-4.jpg');
+    background-position: center;
+    background-size: cover;
+    .container-fluid{
+        width: 90%;
+        .user-info{
+            box-shadow: -1px 7px 21px 3px rgba(0,0,0,0.43);
+        }
+    }
+}
+
+.edit-profile{
+    background-image: url('../images/register-4.jpg');
+    background-position: center;
+    background-size: cover;
+    .container-fluid{
+        width: 90%;
+        .settings{
+            box-shadow: -1px 7px 21px 3px rgba(0,0,0,0.43);
+            a{
+                color: black;
+            }
+            .active{
+               border-bottom: 1px solid black;
+               color: black;
+            }
+        }
+        .edit-pages{
+            box-shadow: -1px 7px 21px 3px rgba(0,0,0,0.43);
+        }
+    }
+    
+}
+
+.order-list{
+    box-shadow: -1px 7px 21px 3px rgba(0,0,0,0.43);
+    overflow-x: scroll;
+    height: 300px;
+}
