@@ -1,5 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { Helmet } from 'react-helmet'
+import React, { useCallback, useContext, useEffect, useState } from 'react'
 import { CartContext } from '../context/cart'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
@@ -15,7 +14,7 @@ const Cart = () => {
   const [instance, setInstance] = useState<any>(null)
   const authContext = useContext(AuthContext)
   const navigate = useNavigate()
-  const getToken = async () => {
+  const getToken = useCallback(async () => {
     try {
       const response = await axios.get('http://localhost:5000/api/product/braintree/token')
       setClientToken(response?.data?.clientToken)
@@ -23,11 +22,11 @@ const Cart = () => {
       console.log(error);
 
     }
-  }
+  },[])
   useEffect(() => {
     getToken()
     document.title = 'E-Shop | Cart'
-  }, [authContext?.token])
+  }, [getToken])
 
   const handlePayment = async () => {
     setIsLoading(true)
@@ -105,20 +104,21 @@ const Cart = () => {
               <h4 className='text-center'>Total: ${totalPrice}</h4>
               <div className="checkout-btn d-flex justify-content-center p-2">
                 {
-                  !authContext?.token ? (
+                  !authContext?.token ?   (
                     'Please login to checkout'
                   ) : (
                     <div className='d-flex flex-column justify-content-center'>
-                      <DropIn
-                        
+                      {
+                        clientToken && <DropIn
                         options={{
                           authorization: clientToken,
                           paypal: {
                             flow: 'vault',
                           }
                         }}
-                        onInstance={(instance:DropIn) => setInstance(instance)}
+                        onInstance={(instance) => setInstance(instance)}
                       />
+                      }
                       <button disabled={isLoading} className='btn btn-outline-dark' onClick={handlePayment} >{
                         isLoading ? 'Processing...' : 'Make Payment'
                       }</button>
